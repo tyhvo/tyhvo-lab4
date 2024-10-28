@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* General styling */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.datetime-container {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end;
+}
+
+.time-ampm-seconds {
+    display: flex; 
+    align-items: flex-end;
+}
+
+.time-hm {
+    display: flex;
+    font-size: 80px;
+    color: #2DBDB1;
+    margin-right: 10px; 
+    margin-bottom: -12.5px; 
+    align-items: flex-end; 
+}
+
+.ampm-seconds {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: -5px; 
+}
+
+.ampm {
+    font-size: 24px;
+    color: #2DBDB1;
+    margin-bottom: -5px; 
+    
+}
+
+.seconds {
+    font-size: 24px;
+    color: #2DBDB1;
+    letter-spacing: 4.5px;
+    padding-left: 4px;
+}
+
+.date {
+    font-size: 27px;
+    color: #4B5853;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .time-hm {
+        font-size: 80px;
+    }
+
+    .ampm {
+        font-size: 24px;
+    }
+
+    .seconds {
+        font-size: 24px;
+    }
+
+    .date {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 340px) {
+    .datetime-container {
+        text-align: right; /* Ensure text is right-aligned on small screens */
+     }
+
+    .time-hm {
+        font-size: 60px;
+    }
+
+    .ampm-seconds {
+        align-items: flex-end; /* Keep AM and seconds aligned to the right */
+     }
+
+    .ampm {
+        font-size: 20px;
+    }
+
+    .seconds {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 20px;
+    }
+}
